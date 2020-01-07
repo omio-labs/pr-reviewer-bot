@@ -1,0 +1,19 @@
+name: PR checkers
+
+on: [pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: 
+        command: [npm test, npm run lint]
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+    - name: ${{ matrix.command }}
+      run: |
+        npm install
+        npm run build --if-present
+        ${{ matrix.command }}

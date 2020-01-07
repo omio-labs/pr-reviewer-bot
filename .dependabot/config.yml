@@ -1,0 +1,20 @@
+version: 1
+
+update_configs:
+  - package_manager: "javascript"
+    directory: "/"
+    update_schedule: "live"
+    allowed_updates:
+      - match:
+          update_type: all
+          dependency_type: direct
+      - match:
+          update_type: security
+          dependency_type: indirect
+    automerged_updates:
+      - match:
+          dependency_type: "development"
+          update_type: "all"
+      - match:
+          dependency_type: "production"
+          update_type: "semver:minor"

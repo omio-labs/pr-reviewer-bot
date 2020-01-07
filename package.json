@@ -1,0 +1,58 @@
+{
+  "name": "@omio-labs/pr-review-bot",
+  "version": "0.0.0",
+  "description": "Auto PR reviwer bot",
+  "main": "./build/index.js",
+  "bin": {
+    "pr-review-bot": "./build/index.js"
+  },
+  "repository": "git@github.com:omio-labs/pr-reviewer-bot.git",
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ./src/**/*",
+    "gulp": "gulp",
+    "start": "ts-node src/index.ts",
+    "build": "tsc --project ./tsconfig.json",
+    "typecheck": "tsc --project ./tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^1.1.0",
+    "axios": "^0.19.0",
+    "js-yaml": "^3.13.1",
+    "lodash": "^4.17.14",
+    "xml2js": "^0.4.22"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^6.3.0",
+    "@semantic-release/github": "^5.5.4",
+    "@semantic-release/npm": "^5.2.0",
+    "@types/jest": "^24.0.23",
+    "@types/js-yaml": "^3.12.1",
+    "@types/lodash": "^4.14.148",
+    "@types/node": "^12.12.8",
+    "@types/xml2js": "^0.4.5",
+    "@typescript-eslint/eslint-plugin": "^2.6.1",
+    "@typescript-eslint/parser": "^2.6.1",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-json": "^2.0.1",
+    "jest": "^24.9.0",
+    "semantic-release": "^15.13.27",
+    "ts-jest": "^24.1.0",
+    "typescript": "3.7.2"
+  },
+  "files": [
+    "build",
+    "package.json",
+    "package-lock.json"
+  ],
+  "jest": {
+    "preset": "ts-jest",
+    "rootDir": "test"
+  }
+}

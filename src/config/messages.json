@@ -1,0 +1,6 @@
+{
+  "SUCCESSFULLY_APPROVED": "PR was successfully auto-approved",
+  "ALREADY_APPROVED": "PR was already approved",
+  "APPROVAL_DISMISSED": "Dismissing the PR since it is not eligible for auto-approval anymore. Please review it manually.",
+  "NOT_ELIGIBLE": "PR is not eligible for auto-approval. Please review it manually."
+}

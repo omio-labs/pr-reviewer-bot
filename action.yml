@@ -1,0 +1,6 @@
+name: 'PR Review Bot'
+description: 'Auto-reviews PRs based on defined criteria'
+author: 'Ozan Tunca'
+runs:
+  using: 'node12'
+  main: 'build/githubActionEntrypoint.js'

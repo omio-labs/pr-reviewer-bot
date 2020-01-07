@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <name>@omio-labs/pr-review-bot</name>
+  <version>0.0.0</version>
+  <description>Auto PR reviwer bot</description>
+  <main>./build/index.js</main>
+  <bin>
+    <pr-review-bot>./build/index.js</pr-review-bot>
+  </bin>
+  <repository>git@github.com:omio-labs/pr-reviewer-bot.git</repository>
+  <author></author>
+  <license>SEE LICENSE IN LICENSE.md</license>
+  <scripts>
+    <test>jest</test>
+    <lint>eslint ./src/**/*</lint>
+    <gulp>gulp</gulp>
+    <start>ts-node src/index.ts</start>
+    <build>tsc --project ./tsconfig.json</build>
+    <typecheck>tsc --project ./tsconfig.json --noEmit</typecheck>
+    <publish>semantic-release</publish>
+  </scripts>
+  <dependencies>
+    <axios>^0.19.0</axios>
+    <js-yaml>^3.13.1</js-yaml>
+    <lodash>^4.17.14</lodash>
+    <xml2js>^0.4.22</xml2js>
+  </dependencies>
+  <devDependencies><@semantic-release/commit-analyzer>^6.3.0
+  </@semantic-release/commit-analyzer><@semantic-release/github>^5.5.4
+</@semantic-release/github><@semantic-release/npm>^5.2.0undefined</@semantic-release/npm><@types/jest>^24.0.19undefined</@types/jest><@types/js-yaml>^3.12.1undefined</@types/js-yaml><@types/lodash>^4.14.144undefined</@types/lodash><@types/node>12.7.4undefined</@types/node><@types/xml2js>^0.4.5undefined</@types/xml2js><@typescript-eslint/eslint-plugin>^2.6.0undefined</@typescript-eslint/eslint-plugin><@typescript-eslint/parser>^2.6.0undefined</@typescript-eslint/parser>undefined<eslint>^6.6.0</eslint>undefined<eslint-config-airbnb-base>^14.0.0</eslint-config-airbnb-base>undefined<eslint-config-prettier>^6.5.0</eslint-config-prettier>undefined<eslint-plugin-import>^2.18.2</eslint-plugin-import>undefined<eslint-plugin-json>^2.0.1</eslint-plugin-json>undefined<jest>^24.9.0</jest>undefined<semantic-release>^15.13.27</semantic-release>undefined<ts-jest>^24.1.0</ts-jest>undefined<ts-node>8.4.1</ts-node>undefined<typescript>3.6.4</typescript>undefined</devDependencies>undefined<files>build</files>undefined<files>package.json</files>undefined<files>package-lock.json</files>undefined<jest>undefined<preset>ts-jest</preset>undefined<rootDir>test</rootDir>undefined</jest>undefined</root>
