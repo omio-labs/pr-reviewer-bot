@@ -1,6 +1,6 @@
-name: 'PR Review Bot'
+name: 'Auto Pull Request Review'
 description: 'Auto-reviews PRs based on defined criteria'
-author: 'Ozan Tunca'
+author: 'Omio'
 runs:
   using: 'node12'
   main: 'build/githubActionEntrypoint.js'
