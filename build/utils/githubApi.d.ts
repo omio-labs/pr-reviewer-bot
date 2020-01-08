@@ -1,0 +1,11 @@
+import { File } from '../types/github';
+import DiffItem from '../types/diff-item';
+import GithubParameters from '../types/github-parameters';
+export declare function assignAuthorizationToken(token: string): void;
+export declare const defaultTransformResponse: (fileName: string) => (res: string) => Promise<any>;
+export declare function getFileContents({ GIT_REPO, GIT_COMMIT }: GithubParameters, fileName: string): Promise<string | object>;
+export declare function getChangedFiles({ GIT_REPO, PR_ID }: GithubParameters): Promise<File[]>;
+export declare function approvePR({ PR_ID, GIT_REPO }: GithubParameters): Promise<void>;
+export declare function dismissPRApproval({ PR_ID, GIT_REPO }: GithubParameters, reviewId: number): Promise<void>;
+export declare function getLatestApprovalFromBot({ PR_ID, GIT_REPO }: GithubParameters): Promise<number | null>;
+export declare function getObjectFileDiff(githubParameters: GithubParameters, fileName: string): Promise<DiffItem[]>;
