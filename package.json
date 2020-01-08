@@ -15,7 +15,8 @@
     "gulp": "gulp",
     "start": "ts-node src/index.ts",
     "build": "tsc --project ./tsconfig.json",
-    "typecheck": "tsc --project ./tsconfig.json --noEmit"
+    "typecheck": "tsc --project ./tsconfig.json --noEmit",
+    "publish": "semantic-release"
   },
   "dependencies": {
     "@actions/core": "^1.2.0",
@@ -26,9 +27,8 @@
     "xml2js": "^0.4.22"
   },
   "devDependencies": {
-    "@semantic-release/commit-analyzer": "^6.3.0",
-    "@semantic-release/github": "^5.5.4",
-    "@semantic-release/npm": "^5.2.0",
+    "@semantic-release/commit-analyzer": "^6.3.3",
+    "@semantic-release/github": "^5.5.5",
     "@types/jest": "^24.0.23",
     "@types/js-yaml": "^3.12.1",
     "@types/lodash": "^4.14.148",
