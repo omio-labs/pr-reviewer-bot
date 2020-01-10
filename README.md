@@ -165,7 +165,7 @@ jobs:
 
 This will create a checker on your pull requests and run the bot. You can view this checker on your pull requests.
 
-![auto-pr-review-checker](/omio-labs/pr-reviewer-bot/blob/master/docs/img/auto-pr-review-checker.png)
+![auto-pr-review-checker](/docs/img/auto-pr-review-action.png)
 
 
 # FAQ
