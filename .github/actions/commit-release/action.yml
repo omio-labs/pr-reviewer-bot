@@ -1,0 +1,31 @@
+name: Git Auto Commit
+description: 'Automatically commits files which have been changed during the workflow run and push changes back to remote repository.'
+
+author: Stefan Zweifel <hello@stefanzweifel.io>
+
+inputs:
+  commit_message:
+    description: Commit message
+    required: true
+  commit_options:
+    description: Commit options (eg. --no-verify)
+    required: false
+  branch:
+    description: Branch name where changes should be pushed too
+    required: true
+  file_pattern:
+    description: File pattern used for "git add"
+    required: false
+    default: '.'
+  repository:
+    description: Path to git repository
+    required: false
+    default: '.'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  icon: 'git-commit'
+  color: orange
