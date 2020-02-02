@@ -21,4 +21,19 @@ jobs:
         npm install
         npm run build --if-present
         npm test
-        npm run publish
+        # npm run publish
+    - name: prepare-publish-github-action
+      run: |
+        npm prune --production
+        sed "s/node_modules/# node_modules/g" .gitignore | tee .gitignore
+        sed "s/build/# build/g" .gitignore | tee .gitignore
+    - name: Publish as Github Action
+      uses: ./.github/actions/commit-release
+      with:
+        branch: "releases/v1"
+        file_pattern: "."
+        commit_message: "Publishing as Github Action"
+        commit_options: '--no-verify --signoff'
+        repository: .
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
