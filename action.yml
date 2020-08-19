@@ -1,8 +1,9 @@
 name: 'Auto PR Review'
 description: 'Auto-reviews PRs based on defined criteria'
 author: 'Ozan Tunca'
-icon: 'check-circle'
-color: 'blue'
+branding:
+  icon: 'check-circle'
+  color: 'blue'
 runs:
   using: 'node12'
   main: 'build/githubActionEntrypoint.js'
