@@ -10,7 +10,7 @@ The ideal way to run this bot is to do it as a pull request checker. You can do 
 
 - [Run the bot as a Github Action](#user-content-running)
 - [Configure the bot](docs/configuration.md)
-- [Frequently asked questions](docs/faq)
+- [Frequently asked questions](docs/faq.md)
 - [Contributing](CONTRIBUTING.md)
 
 ## Running As a Github Action
